@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_afca52258fd04c08b6959d0b9dd8f1cd {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_afca52258fd04c08b6959d0b9dd8f1cd" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_afca52258fd04c08b6959d0b9dd8f1cd = L.map(
+                                  'map_afca52258fd04c08b6959d0b9dd8f1cd',
+                                  {center: [22.3529808,114.107615],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_6b9291a4a5ec40b08c330c8294d32301 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+        
+    
+            var circle_marker_6a08ba2650694df785d0e0c0f26a1e04 = L.circleMarker(
+                [22.273022,114.14988100000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_f6cd296212664a70a8a28d3392f70747 = L.popup({maxWidth: '300'});
+
+            
+                var html_b5d193b71bb3489db3a4d03263d59e32 = $('<div id="html_b5d193b71bb3489db3a4d03263d59e32" style="width: 100.0%; height: 100.0%;">Central and Western Cluster 2</div>')[0];
+                popup_f6cd296212664a70a8a28d3392f70747.setContent(html_b5d193b71bb3489db3a4d03263d59e32);
+            
+
+            circle_marker_6a08ba2650694df785d0e0c0f26a1e04.bindPopup(popup_f6cd296212664a70a8a28d3392f70747);
+
+            
+        
+    
+            var circle_marker_9124ba801a614d4592b5bb1b6bef2a6e = L.circleMarker(
+                [22.273389,114.236078],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_4c721bf3dfcc48b8acd0c0f5789f5134 = L.popup({maxWidth: '300'});
+
+            
+                var html_2fe53c64d21e47518f5574933613ec2c = $('<div id="html_2fe53c64d21e47518f5574933613ec2c" style="width: 100.0%; height: 100.0%;">Eastern Cluster 2</div>')[0];
+                popup_4c721bf3dfcc48b8acd0c0f5789f5134.setContent(html_2fe53c64d21e47518f5574933613ec2c);
+            
+
+            circle_marker_9124ba801a614d4592b5bb1b6bef2a6e.bindPopup(popup_4c721bf3dfcc48b8acd0c0f5789f5134);
+
+            
+        
+    
+            var circle_marker_b9f1a28a5adc4ec4ae5c7524c726e69d = L.circleMarker(
+                [22.243216,114.19743999999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_47b0c399a9044a56b28484c7cd3ea06b = L.popup({maxWidth: '300'});
+
+            
+                var html_fb35c05fd7fa41428756ad130ac62dc6 = $('<div id="html_fb35c05fd7fa41428756ad130ac62dc6" style="width: 100.0%; height: 100.0%;">Southern Cluster 1</div>')[0];
+                popup_47b0c399a9044a56b28484c7cd3ea06b.setContent(html_fb35c05fd7fa41428756ad130ac62dc6);
+            
+
+            circle_marker_b9f1a28a5adc4ec4ae5c7524c726e69d.bindPopup(popup_47b0c399a9044a56b28484c7cd3ea06b);
+
+            
+        
+    
+            var circle_marker_2ad981d41df04e08ae2efee788809ddf = L.circleMarker(
+                [22.276022,114.175147],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_908aba9e9ac7466fbf561503bc1203b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a26f96882e8450ba0f9bc418baaa275 = $('<div id="html_6a26f96882e8450ba0f9bc418baaa275" style="width: 100.0%; height: 100.0%;">Wan Chai Cluster 2</div>')[0];
+                popup_908aba9e9ac7466fbf561503bc1203b2.setContent(html_6a26f96882e8450ba0f9bc418baaa275);
+            
+
+            circle_marker_2ad981d41df04e08ae2efee788809ddf.bindPopup(popup_908aba9e9ac7466fbf561503bc1203b2);
+
+            
+        
+    
+            var circle_marker_9c771fcf26214863859ae78adb5d01e2 = L.circleMarker(
+                [22.32859,114.16028500000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_8014c953d166402db0d7dd66ee7d587d = L.popup({maxWidth: '300'});
+
+            
+                var html_87a80df2fbbc4563af5ab10e933836df = $('<div id="html_87a80df2fbbc4563af5ab10e933836df" style="width: 100.0%; height: 100.0%;">Sham Shui Po Cluster 2</div>')[0];
+                popup_8014c953d166402db0d7dd66ee7d587d.setContent(html_87a80df2fbbc4563af5ab10e933836df);
+            
+
+            circle_marker_9c771fcf26214863859ae78adb5d01e2.bindPopup(popup_8014c953d166402db0d7dd66ee7d587d);
+
+            
+        
+    
+            var circle_marker_df75d1dc1a7b47569fd80ece8f9122dd = L.circleMarker(
+                [22.32321,114.18555],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_20b86f1459a84ca3ba067c52b18a63bf = L.popup({maxWidth: '300'});
+
+            
+                var html_8859d07286bb47839dec1199b3a91a5c = $('<div id="html_8859d07286bb47839dec1199b3a91a5c" style="width: 100.0%; height: 100.0%;">Kowloon City Cluster 0</div>')[0];
+                popup_20b86f1459a84ca3ba067c52b18a63bf.setContent(html_8859d07286bb47839dec1199b3a91a5c);
+            
+
+            circle_marker_df75d1dc1a7b47569fd80ece8f9122dd.bindPopup(popup_20b86f1459a84ca3ba067c52b18a63bf);
+
+            
+        
+    
+            var circle_marker_0728f131b7f64f309798a5a1a79d97ab = L.circleMarker(
+                [22.310369,114.22270300000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_e9c7899027704ce098a38ab871f4ef74 = L.popup({maxWidth: '300'});
+
+            
+                var html_af7fcb0184444689abce28fad80ab827 = $('<div id="html_af7fcb0184444689abce28fad80ab827" style="width: 100.0%; height: 100.0%;">Kwun Tong Cluster 3</div>')[0];
+                popup_e9c7899027704ce098a38ab871f4ef74.setContent(html_af7fcb0184444689abce28fad80ab827);
+            
+
+            circle_marker_0728f131b7f64f309798a5a1a79d97ab.bindPopup(popup_e9c7899027704ce098a38ab871f4ef74);
+
+            
+        
+    
+            var circle_marker_43e0e1e10c0c41e4a0d170c4e9f30db6 = L.circleMarker(
+                [22.342961,114.192981],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_84cff393c5b6427486c08828f239b9fb = L.popup({maxWidth: '300'});
+
+            
+                var html_0c8725c8fdb64644ac543c1c0623adc2 = $('<div id="html_0c8725c8fdb64644ac543c1c0623adc2" style="width: 100.0%; height: 100.0%;">Wong Tai Sin Cluster 0</div>')[0];
+                popup_84cff393c5b6427486c08828f239b9fb.setContent(html_0c8725c8fdb64644ac543c1c0623adc2);
+            
+
+            circle_marker_43e0e1e10c0c41e4a0d170c4e9f30db6.bindPopup(popup_84cff393c5b6427486c08828f239b9fb);
+
+            
+        
+    
+            var circle_marker_f9950c1a2f8349558809d8ffe777096b = L.circleMarker(
+                [22.311603,114.17068799999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#2adddd",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2adddd",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_614e1ad4bd8a4c529e1906d776d2ac12 = L.popup({maxWidth: '300'});
+
+            
+                var html_97392f64159442cf974970ab650d5202 = $('<div id="html_97392f64159442cf974970ab650d5202" style="width: 100.0%; height: 100.0%;">Yau Tsim Mong Cluster 2</div>')[0];
+                popup_614e1ad4bd8a4c529e1906d776d2ac12.setContent(html_97392f64159442cf974970ab650d5202);
+            
+
+            circle_marker_f9950c1a2f8349558809d8ffe777096b.bindPopup(popup_614e1ad4bd8a4c529e1906d776d2ac12);
+
+            
+        
+    
+            var circle_marker_aa38282ac24d43499016c70622e0f96c = L.circleMarker(
+                [22.2628,113.9655],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_2203013d18e347e0ae686e7642e9bf13 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a14e013d7ac400ca71532114c4b4681 = $('<div id="html_6a14e013d7ac400ca71532114c4b4681" style="width: 100.0%; height: 100.0%;">Islands Cluster 1</div>')[0];
+                popup_2203013d18e347e0ae686e7642e9bf13.setContent(html_6a14e013d7ac400ca71532114c4b4681);
+            
+
+            circle_marker_aa38282ac24d43499016c70622e0f96c.bindPopup(popup_2203013d18e347e0ae686e7642e9bf13);
+
+            
+        
+    
+            var circle_marker_8b5837ff817b43cd992b5c68b72b1b11 = L.circleMarker(
+                [22.354908,114.126099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_3a297f674b1141fab4d126310a8c89ee = L.popup({maxWidth: '300'});
+
+            
+                var html_9865576d4cd64e32831413741f4adc08 = $('<div id="html_9865576d4cd64e32831413741f4adc08" style="width: 100.0%; height: 100.0%;">Kwai Tsing Cluster 3</div>')[0];
+                popup_3a297f674b1141fab4d126310a8c89ee.setContent(html_9865576d4cd64e32831413741f4adc08);
+            
+
+            circle_marker_8b5837ff817b43cd992b5c68b72b1b11.bindPopup(popup_3a297f674b1141fab4d126310a8c89ee);
+
+            
+        
+    
+            var circle_marker_9119ac36351449b1b6eda86dc619cc93 = L.circleMarker(
+                [22.50009,114.1558],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_0cabdf07fa8c4278a382cf50e737b63f = L.popup({maxWidth: '300'});
+
+            
+                var html_b96e64bda6f941a9ab46d439bc019d01 = $('<div id="html_b96e64bda6f941a9ab46d439bc019d01" style="width: 100.0%; height: 100.0%;">North Cluster 3</div>')[0];
+                popup_0cabdf07fa8c4278a382cf50e737b63f.setContent(html_b96e64bda6f941a9ab46d439bc019d01);
+            
+
+            circle_marker_9119ac36351449b1b6eda86dc619cc93.bindPopup(popup_0cabdf07fa8c4278a382cf50e737b63f);
+
+            
+        
+    
+            var circle_marker_d59a6e8eb4934cde8246174dd358d9e9 = L.circleMarker(
+                [22.383689,114.27078700000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_3131354554b440c0926cc22ceb2eee2d = L.popup({maxWidth: '300'});
+
+            
+                var html_897d9b0d69cd4e6b9349c835f6a7192c = $('<div id="html_897d9b0d69cd4e6b9349c835f6a7192c" style="width: 100.0%; height: 100.0%;">Sai Kung Cluster 1</div>')[0];
+                popup_3131354554b440c0926cc22ceb2eee2d.setContent(html_897d9b0d69cd4e6b9349c835f6a7192c);
+            
+
+            circle_marker_d59a6e8eb4934cde8246174dd358d9e9.bindPopup(popup_3131354554b440c0926cc22ceb2eee2d);
+
+            
+        
+    
+            var circle_marker_f803c07b56a8499c8a015b1c20f9f9f2 = L.circleMarker(
+                [22.377129999999998,114.19743999999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_166a2bbaed06452fb5369c2bf2d2bf09 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca5542205fb9424cb06a0d6a4877d2fb = $('<div id="html_ca5542205fb9424cb06a0d6a4877d2fb" style="width: 100.0%; height: 100.0%;">Sha Tin Cluster 3</div>')[0];
+                popup_166a2bbaed06452fb5369c2bf2d2bf09.setContent(html_ca5542205fb9424cb06a0d6a4877d2fb);
+            
+
+            circle_marker_f803c07b56a8499c8a015b1c20f9f9f2.bindPopup(popup_166a2bbaed06452fb5369c2bf2d2bf09);
+
+            
+        
+    
+            var circle_marker_ee85550c202e41ea98a256e92a161cd3 = L.circleMarker(
+                [22.442328,114.165521],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_b139d0b4cf9b46339e1ab0536a5be645 = L.popup({maxWidth: '300'});
+
+            
+                var html_c3545fa73d7d4106a2c63bef3b729d73 = $('<div id="html_c3545fa73d7d4106a2c63bef3b729d73" style="width: 100.0%; height: 100.0%;">Tai Po Cluster 3</div>')[0];
+                popup_b139d0b4cf9b46339e1ab0536a5be645.setContent(html_c3545fa73d7d4106a2c63bef3b729d73);
+            
+
+            circle_marker_ee85550c202e41ea98a256e92a161cd3.bindPopup(popup_b139d0b4cf9b46339e1ab0536a5be645);
+
+            
+        
+    
+            var circle_marker_8d3199f13880496986e9a63d2f5faa3b = L.circleMarker(
+                [22.369912,114.11443100000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_adedafab9ae54c5f8582b5fcba60c849 = L.popup({maxWidth: '300'});
+
+            
+                var html_7302da545905457fb34bd1c3da4d0bc6 = $('<div id="html_7302da545905457fb34bd1c3da4d0bc6" style="width: 100.0%; height: 100.0%;">Tsuen Wan Cluster 0</div>')[0];
+                popup_adedafab9ae54c5f8582b5fcba60c849.setContent(html_7302da545905457fb34bd1c3da4d0bc6);
+            
+
+            circle_marker_8d3199f13880496986e9a63d2f5faa3b.bindPopup(popup_adedafab9ae54c5f8582b5fcba60c849);
+
+            
+        
+    
+            var circle_marker_27ed06cb2b704c5a98c6b9832ed16732 = L.circleMarker(
+                [22.390829999999998,113.97251299999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_ac778dea1bce4b4a937ce57b23812fc1 = L.popup({maxWidth: '300'});
+
+            
+                var html_9b322f11d4b8464aa39038ee6c7dacba = $('<div id="html_9b322f11d4b8464aa39038ee6c7dacba" style="width: 100.0%; height: 100.0%;">Tuen Mun Cluster 3</div>')[0];
+                popup_ac778dea1bce4b4a937ce57b23812fc1.setContent(html_9b322f11d4b8464aa39038ee6c7dacba);
+            
+
+            circle_marker_27ed06cb2b704c5a98c6b9832ed16732.bindPopup(popup_ac778dea1bce4b4a937ce57b23812fc1);
+
+            
+        
+    
+            var circle_marker_80535c8fc40e4684a90aff76c019e5e4 = L.circleMarker(
+                [22.444538,114.022208],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#d4dd80",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#d4dd80",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_afca52258fd04c08b6959d0b9dd8f1cd);
+            
+    
+            var popup_31e5844649d34179abe846a06e6bc8ee = L.popup({maxWidth: '300'});
+
+            
+                var html_16cb24ffe3f5454cb76b1f7da179b955 = $('<div id="html_16cb24ffe3f5454cb76b1f7da179b955" style="width: 100.0%; height: 100.0%;">Yuen Long Cluster 3</div>')[0];
+                popup_31e5844649d34179abe846a06e6bc8ee.setContent(html_16cb24ffe3f5454cb76b1f7da179b955);
+            
+
+            circle_marker_80535c8fc40e4684a90aff76c019e5e4.bindPopup(popup_31e5844649d34179abe846a06e6bc8ee);
+
+            
+        
+</script>
