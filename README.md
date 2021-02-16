@@ -1,1 +1,1 @@
-<h4>For better display of notebook, please access to <a href = 'https://nbviewer.jupyter.org/github/rex-lui/Clustering-of-Hong-Kong-Districts-by-Restaurant-Mix/blob/main/Clustering.ipynb'>this link</a>.</h4>
+<h4>For better display of notebook, please access to <a href = 'https://nbviewer.jupyter.org/github/rex-lui/Clustering-of-Hong-Kong-Districts-by-Restaurant-Mix/blob/main/Clustering.ipynb?flush_cache=true'>this link</a>.</h4>
